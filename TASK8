@@ -1,0 +1,58 @@
+List down all the error types and check all the errors using a python program for all errors
+
+types of error
+  Syntax error, Logical error or Exceptions
+for  syntax error
+if 5< 3
+  File "<interactive input>"
+    if 5 < 3
+for exceptions
+15+spam*3 = name error
+100*(1/0) = zero division error
+'4'+4= type error
+
+Design a simple calculator app with try and except for all use cases
+try:
+    c=a+b
+    d=a-b
+    e=a*b
+    f=a/b
+    print(c,d,e,f)
+except:
+    print("no")
+    
+print one message if the try block raises a NameError and another for other errors
+try:
+    print(doctor)
+except NameError:
+    print("doctor is not defined")
+    
+try:
+    print("engineer")
+except TypeError:
+    print("engineer is not defined")
+except:
+    print("end of the code")
+    
+When try-except scenario is not required?
+   The reson for use try and except is when we have the code block that will sometimes run correctly and sometimes not , depending on conditions.so when we doesn't have code block try-except scenario is not required.
+
+
+Try getting an input inside the try catch block
+try:
+    print(num)
+except:
+    print("progrom is ended")
+num=int(input('Enter the num:'))
+if num>0:
+    print('num is positive')
+else:
+    print('num is negative')
+    
+OUTPUT:
+no
+doctor is not defined
+engineer
+progrom is ended
+Enter the num:5
+num is positive
